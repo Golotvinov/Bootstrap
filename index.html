@@ -32,7 +32,7 @@
                 <li class="nav-item"><a href="#sluzby" class="nav-link link-secondary">Služby</a></li>
                 <li class="nav-item"><a href="#portfolio" class="nav-link link-secondary">Portfolio</a></li>
                 <li class="nav-item"><a href="#reference" class="nav-link link-secondary">Reference</a></li>
-                <li class="nav-item"><a href="#kontakty" class="nav-link link-secondary">Kontaky</a></li>
+                <li class="nav-item"><a href="#kontaky" class="nav-link link-secondary">Kontaky</a></li>
             </ul>
         </header>
     </div>
@@ -189,7 +189,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col py-5 px-3">
+            <div class="col py-md-5 pb-5 px-3">
                 <div class="card">
                     <div class="card-body text-center shadow-sm">
                         <p><img class=" img-fluid" src="img/reference2.png" alt="card image" height="20%" width="20%">
@@ -208,6 +208,44 @@
         </div>
     </section>
 
+    <section class="container" id="kontaky">
+        <h2 class="text-center display-4">Kontakty</h2>
+        <form class="row g-3 py-sm-5 px-3">
+            <div class="col-md-6">
+                <label for="inputName" class="form-label">Jméno</label>
+                <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail" class="form-label">Emailová adresa</label>
+                <input type="email" class="form-control" id="inputEmail">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Zpráva</label>
+                <textarea class="form-control" id="inputZprava" rows="5"></textarea>
+            </div>
+            <div class="d-flex flex-row-reverse">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" data-bs-toggle="modal" data-bs-target="#formularModal" >Odeslat formulář</button>
+            </div>
+        </form>
+        <div class="modal fade" id="formularModal" tabindex="-1" aria-labelledby="formularModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="formularModal">Zpráva z odesílacího formuláře</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Zprávu se podařilo úspěšně odeslat! Můžete nyní toto okno zavřít.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha256-XDbijJp72GS2c+Ij234ZNJIyJ1Nv+9+HH1i28JuayMk=" crossorigin="anonymous"></script>
 </body>
 
 </html>
