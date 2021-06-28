@@ -14,8 +14,8 @@
 
 <body>
 
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <div class="container sticky-top">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom bg-white">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 691.4" class="bi me-2" width="40" role="img"
                     aria-label="site-logo">
@@ -224,7 +224,8 @@
                 <textarea class="form-control" id="inputZprava" rows="5"></textarea>
             </div>
             <div class="d-flex flex-row-reverse">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" data-bs-toggle="modal" data-bs-target="#formularModal" >Odeslat formulář</button>
+                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" data-bs-toggle="modal"
+                    data-bs-target="#formularModal">Odeslat formulář</button>
             </div>
         </form>
         <div class="modal fade" id="formularModal" tabindex="-1" aria-labelledby="formularModal" aria-hidden="true">
@@ -244,6 +245,34 @@
             </div>
         </div>
     </section>
+
+    <footer class="p-3 bg-dark text-white mt-4">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <svg version="1.1" id="footerLogo" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="40"
+                        viewBox="0 0 533.5 368.9" xml:space="preserve">
+                        <style>
+                            .st0 {
+                                fill: #fff
+                            }
+                        </style>
+                        <path class="st0"
+                            d="M329.9 0c-22.8 0-44.3 5.8-63.1 16C248 5.8 226.5 0 203.7 0H0v236.7c0 73 59.2 132.2 132.2 132.2h269.1c73 0 132.2-59.2 132.2-132.2V0H329.9zM132.2 345.6c-29.1 0-56.5-11.3-77-31.9-20.6-20.6-31.9-47.9-31.9-77V23.3h180.4c14.2 0 28.1 2.7 40.9 7.9-28.7 24.3-46.9 60.5-46.9 101v213.4h-65.5zm88.8 0V132.2c0-29.1 11.3-56.5 31.9-77 4.4-4.4 9-8.3 13.9-11.8 4.9 3.5 9.6 7.4 13.9 11.8 20.6 20.6 31.9 47.9 31.9 77v213.4H221zm289.3-108.9c0 29.1-11.3 56.5-31.9 77-20.6 20.6-47.9 31.9-77 31.9H336V132.2c0-40.5-18.2-76.8-46.9-101 12.8-5.2 26.6-7.9 40.9-7.9h180.4l-.1 213.4z" />
+                        <path class="st0"
+                            d="M161 284.9H84.9v-5.6h7.8V72.6h-7.8V67h40.4v5.6h-7.8v206.7h18.7v-59.7H161v65.3zM445.4 284.9H405v-5.6h7.8V72.6H405V67h40.4v5.6h-7.8v206.7h7.8v5.6z" />
+                    </svg>
+                    <span class="ps-2 fs-4 fw-bold text-light">Lorem Ipsum</span><span
+                        class="fs-5 ms-2 text-light">s.r.o.</span>
+                </a>
+                <div class="col-md-5 text-end">
+                    Fiktivní společnost s.r.o., verze s frameworkem Bootstrap.
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha256-XDbijJp72GS2c+Ij234ZNJIyJ1Nv+9+HH1i28JuayMk=" crossorigin="anonymous"></script>
 </body>
